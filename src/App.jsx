@@ -10,7 +10,7 @@ export default function App() {
       <Navbar />
 
       <main className="flex-grow">
-        <h1 className="text-3xl font-bold underline bg-red-400 align-middle text-center">
+        <h1 className="text-3xl font-bold underline bg-red-400">
           Hello world!
         </h1>
       </main>
