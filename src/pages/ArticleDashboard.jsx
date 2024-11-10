@@ -128,7 +128,7 @@ const ArticleDashboard = () => {
 
 
       {/* Header */}
-      <h1 className="text-6xl font-extrabold text-center mb-16 ">Blog Artikel</h1>
+      <h1 className="text-[70px] font-extrabold text-center mb-8 ">Blog Artikel</h1>
 
       {/* Gambar Banner */}
       <div className="flex justify-center mb-20">

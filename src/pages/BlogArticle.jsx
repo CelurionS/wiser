@@ -60,16 +60,16 @@ const BlogArticle = () => {
           <input
             type="text"
             placeholder="Cari Blog Artikel"
-            className="w-full pl-10 pr-4 py-2 rounded-md border-2 text-border border-border focus:outline-none focus:ring-2 focus:ring-blue-200"
+            className="w-full pl-10 pr-4 py-2 rounded-md border-2 text-border border-border focus:outline-none focus:ring-2 focus:ring-blue-200 placeholder:text-border"
           />
         </div>
       </div>
 
       {/* Title */}
-      <h1 className="text-6xl font-extrabold text-center mb-8 ">
+      <h1 className="text-[70px] font-extrabold text-center mb-8 ">
         Blog Artikel
       </h1>
-      <h2 className="text-4xl font-semibold text-center text-black mb-8">
+      <h2 className="text-[40px] font-semibold text-center text-black mb-8">
         Kandungan Nitrit pada Sarang Burung Walet dan Dampaknya terhadap
         Kesehatan
       </h2>
@@ -87,7 +87,7 @@ const BlogArticle = () => {
       </div>
 
       {/* Article Content */}
-      <div className="prose prose-lg max-w-fit text-xl text-justify mb-16 mt-20 text-black">
+      <div className="prose prose-lg max-w-fit text-xl text-justify mb-16 mt-20 text-black leading-relaxed">
         <p>
           Sarang burung walet dihasilkan oleh empat spesies utama (Collocalia
           fuciphaga, Collocalia germanis, Collocalia maxima, dan Collocalia
@@ -156,7 +156,7 @@ const BlogArticle = () => {
             href="https://ejurnal.undana.ac.id/index.php/JKV/article/view/4731"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-iconig ml-1"
+            className="text-iconig font-normal ml-1"
           >
             https://ejurnal.undana.ac.id/index.php/JKV/article/view/4731
           </a>
@@ -247,7 +247,8 @@ const BlogArticle = () => {
             </label>
             <input
               type="text"
-              className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-4 py-2 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-border"
+              placeholder="Nama"
             />
           </div>
           <div>
@@ -256,13 +257,14 @@ const BlogArticle = () => {
             </label>
             <input
               type="email"
-              className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-4 py-2 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-border"
+              placeholder="Email"
             />
           </div>
           <div>
             <textarea
               rows="4"
-              className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-4 py-2 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-border"
               placeholder="Tulis disini..."
             ></textarea>
           </div>

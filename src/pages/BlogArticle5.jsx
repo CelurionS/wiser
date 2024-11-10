@@ -60,16 +60,16 @@ const BlogArticle5 = () => {
           <input
             type="text"
             placeholder="Cari Blog Artikel"
-            className="w-full pl-10 pr-4 py-2 rounded-md border-2 text-border border-border focus:outline-none focus:ring-2 focus:ring-blue-200"
+            className="w-full pl-10 pr-4 py-2 rounded-md border-2 text-border border-border focus:outline-none focus:ring-2 focus:ring-blue-200 placeholder:text-border"
           />
         </div>
       </div>
 
       {/* Title */}
-      <h1 className="text-6xl font-extrabold text-center mb-8 ">
+      <h1 className="text-[70px] font-extrabold text-center mb-8 ">
         Blog Artikel
       </h1>
-      <h2 className="text-4xl font-semibold text-center text-black mb-8">
+      <h2 className="text-[40px] font-semibold text-center text-black mb-8">
         Jenis Parfum Aroma Walet Yang Digunakan Peternak Walet
       </h2>
       <p className="text-center text-2xl text-[#999494] font-light mb-20">
@@ -86,7 +86,7 @@ const BlogArticle5 = () => {
       </div>
 
       {/* Article Content */}
-      <div className="prose prose-lg max-w-fit text-xl text-justify mb-16 mt-20 text-black">
+      <div className="prose prose-lg max-w-fit text-xl text-justify mb-16 mt-20 text-black leading-relaxed">
         <p>
           Untuk mengoptimalkan budidaya sarang burung walet banyak cara yang
           dilakukan oleh peternak walet salah satunya adalah menggunakan parfum
@@ -178,7 +178,7 @@ const BlogArticle5 = () => {
             href="https://www.dianwalet.com/2019/09/jenis-jenis-parfum-aroma-walet-yang.html"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-iconig ml-1"
+            className="text-iconig font-normal ml-1"
           >
             Jenis-Jenis Parfum Aroma Walet Yang Digunakan Peternak Walet | DIAN
             WALET
@@ -259,7 +259,7 @@ const BlogArticle5 = () => {
       </div>
 
       {/* Comment Section */}
-      <div className="container my-20 p-6 bg-bgdropdown rounded-lg shadow-md lg:w-[900px] mx-auto">
+      <div className="container my-20 p-6 bg-bgdropdown rounded-lg shadow-md lg:w-[1200px] mx-auto">
         <h3 className="text-4xl font-semibold mb-4 text-center text-black">
           Komentar yuk!
         </h3>
@@ -270,7 +270,8 @@ const BlogArticle5 = () => {
             </label>
             <input
               type="text"
-              className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-4 py-2 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-border"
+              placeholder="Nama"
             />
           </div>
           <div>
@@ -279,13 +280,14 @@ const BlogArticle5 = () => {
             </label>
             <input
               type="email"
-              className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-4 py-2 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-border"
+              placeholder="Email"
             />
           </div>
           <div>
             <textarea
               rows="4"
-              className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-4 py-2 rounded-md border border-border focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-border"
               placeholder="Tulis disini..."
             ></textarea>
           </div>
@@ -299,7 +301,7 @@ const BlogArticle5 = () => {
           </div>
         </form>
               
-        <CommentSection />
+        <CommentSection/>
       </div>
     </div>
   );
