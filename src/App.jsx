@@ -82,7 +82,8 @@ export default function App() {
           <Route path="/tentang-kami" element={<TentangKami />} />
           </Routes>
         </main>
-      
+
+        <Footer/>
         {/* Footer at the bottom */}
         <Footer />
       </div>
