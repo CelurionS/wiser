@@ -1,6 +1,6 @@
-import gambar from '../assets/gambar.jpg';
+import gambar from '../assets/Mwallet2.png';
 
-const Homepage = () => {
+const HomePage = () => {
     return (
         <div className="container mx-auto px-4 mt-12">
             {/* Teks 1 dan Gambar */}
@@ -90,4 +90,4 @@ const Homepage = () => {
     );
 }
 
-export default Homepage;
+export default HomePage;

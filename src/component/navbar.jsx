@@ -44,7 +44,7 @@ const Navbar = () => {
         {/* Navigation Links - Right Side */}
         <div className="flex items-center space-x-6">
           <a
-            href="#"
+            href="/HomePage"
             className={`font-raleway font-semibold text-xl ${activeLink === 'beranda' ? 'text-click underline font-extrabold' : 'text-fontblue'}`}
             onClick={() => handleLinkClick('beranda')}
           >
@@ -72,7 +72,7 @@ const Navbar = () => {
                 <MenuItem>
                   {({ active }) => (
                     <a
-                      href="#"
+                      href="/MateriPage"
                       onClick={() => handleLinkClick('materi')}
                       className={`block text-center text-lg font-semibold text-click ${active ? 'bg-gray-100' : ''} px-4 py-3`}
                     >

@@ -1,20 +1,19 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Mwallet1 from '../assets/Mwallet1.png';
-import Mwallet2 from '../assets/Mwallet2.png';
-import Mwallet3 from '../assets/Mwallet3.png';
-import Mwallet4 from '../assets/Mwallet4.png';
-import Mwallet5 from '../assets/Mwallet5.png';
-import Mwallet6 from '../assets/Mwallet6.png';
-import Mwallet7 from '../assets/Mwallet7.png';
+import M2wallet1 from '../assets/M2wallet1.png';
+import M2wallet2 from '../assets/M2wallet2.png';
+import M2wallet3 from '../assets/M2wallet3.png';
+import M2wallet4 from '../assets/M2wallet4.png';
+import M2wallet5 from '../assets/M2wallet5.png';
+import M2wallet6 from '../assets/M2wallet6.png';
 
-const MateriPage = () => {
+const MateriPage2 = () => {
   const navigate = useNavigate();
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(2);
   const totalPages = 2;
 
   const goToPage = (page) => {
-    if (page >= 1 && page <= totalPages) { 
+    if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
       const pageUrl = page === 1 ? '/MateriPage' : '/MateriPage2';
       navigate(pageUrl);
@@ -26,17 +25,12 @@ const MateriPage = () => {
   };
 
   const cardsData = [
-    { image: Mwallet2, title: 'Pengenalan Burung Walet dan Habitatnya', description: 'Membahas jenis-jenis burung walet yang sering dibudidayakan dan karakteristiknya, seperti walet sarang putih (Collocalia fuciphaga) yang menghasilkan sarang bernilai tinggi.', pageUrl: '/MateriDetailPage1' },
-
-    { image: Mwallet3, title: 'Pemilihan Lokasi Rumah Walet', description: 'Memilih lokasi yang ideal untuk rumah walet, termasuk faktor seperti kedekatan dengan habitat alami, kelembapan, suhu, dan akses ke sumber makanan (serangga).', pageUrl: '/MateriDetailPage2' },
-
-    { image: Mwallet4, title: 'Desain dan Konstruksi Rumah Walet', description: 'Mengatur tata letak rumah walet agar menyerupai habitat alaminya, dengan pencahayaan minim, ventilasi baik, dan sirkulasi udara yang mendukung kesehatan burung walet.', pageUrl: '/MateriDetailPage3' },
-
-    { image: Mwallet5, title: 'Pengaturan Suhu dan Kelembapan', description: 'Teknologi dan metode untuk mengontrol suhu dan kelembapan di dalam rumah walet, yang sangat penting untuk kenyamanan burung dan keberhasilan panen sarang.', pageUrl: '/MateriDetailPage4' },
-    
-    { image: Mwallet6, title: 'Sistem Suara Pemanggil Walet', description: 'Teknik penggunaan suara pemanggil burung walet (audio tweeter) untuk menarik burung masuk ke rumah walet, serta pemilihan jenis audio dan waktu pemutaran yang optimal.', pageUrl: '/MateriDetailPage5' },
-
-    { image: Mwallet7, title: 'Pemeliharaan dan Perawatan Rumah Walet', description: 'Prosedur untuk menjaga kebersihan rumah walet, mencegah serangan hama seperti tikus dan serangga, serta pemantauan rutin kondisi lingkungan di dalam rumah.', pageUrl: '/MateriDetailPage6' }
+    { image: M2wallet1, title: 'Siklus Hidup dan Perkembangbiakan Burung Walet', description: 'Penjelasan tentang pola makan, perkembangbiakan, dan perilaku burung walet saat bersarang, yang penting untuk memahami kapan waktu terbaik untuk panen.', videoUrl: 'https://www.youtube.com/embed/OE140zsQ08I' },
+    { image: M2wallet2, title: 'Teknik Panen Sarang Burung Walet', description: 'Cara memanen sarang dengan benar agar tidak mengganggu siklus reproduksi burung dan menjaga kualitas sarang yang dihasilkan.', videoUrl: 'https://www.youtube.com/watch?v=rK_d5g3pBb8' },
+    { image: M2wallet3, title: 'Pengolahan Sarang Burung Walet', description: 'Langkah-langkah membersihkan dan mengolah sarang walet agar siap dipasarkan, termasuk teknik pengeringan dan pengepakan yang baik.', videoUrl: 'https://www.youtube.com/watch?v=wfCcs0vLysk' },
+    { image: M2wallet4, title: 'Pemasaran Sarang Burung Walet', description: 'Strategi menjual sarang walet, dari pasar lokal hingga ekspor internasional, serta memahami standar kualitas dan sertifikasi yang dibutuhkan untuk perdagangan.', videoUrl: 'https://www.youtube.com/watch?v=pyi0ZfuIIvo' },
+    { image: M2wallet5, title: 'Penggunaan Teknologi dalam Budidaya Walet', description: 'Pemanfaatan teknologi IoT (Internet of Things) untuk memantau kelembapan, suhu, dan kondisi lingkungan rumah walet secara otomatis.', videoUrl: 'https://www.youtube.com/watch?v=RUi54JTgL5s' },
+    { image: M2wallet6, title: 'Konservasi dan Keberlanjutan', description: 'Bagaimana menjaga keberlanjutan budidaya sarang walet tanpa merusak populasi burung dan ekosistem di sekitarnya, termasuk teknik panen yang bertanggung jawab.', videoUrl: 'https://www.youtube.com/watch?v=6YZlFdTIdzM' },
   ];
 
   return (
@@ -55,16 +49,13 @@ const MateriPage = () => {
             Mulai
           </button>
         </div>
-        <img src={Mwallet1} alt="Burung Walet" className="w-64 h-80 rounded-lg object-cover shadow-lg" />
+        <img src={M2wallet1} alt="Burung Walet" className="w-64 h-80 rounded-lg object-cover shadow-lg" />
       </div>
 
       {/* Daftar Materi */}
       <div id="materiSection" className="flex flex-col items-center w-full bg-white">
-        {/* Header & Input Pencarian */}
         <div className="w-full bg-[#609AC1] py-12 text-center flex flex-col items-center" style={{ marginBottom: '50px' }}>
           <h1 className="text-2xl font-semibold text-black" style={{ marginBottom: '25px' }}>Cari Materi Mu Di Sini</h1>
-
-          {/* Input Pencarian */}
           <div className="w-full max-w-lg mt-6 flex items-center" style={{ marginBottom: '35px' }}>
             <input
               type="text"
@@ -74,7 +65,6 @@ const MateriPage = () => {
           </div>
         </div>
 
-        {/* Materi */}
         <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 mt-8 max-w-5xl"
           style={{ columnGap: '70px', rowGap: '92px' }}
@@ -83,7 +73,7 @@ const MateriPage = () => {
             <div
               key={index}
               className="relative cursor-pointer bg-blue-100 rounded-lg overflow-hidden shadow-lg"
-              onClick={() => handleMateriClick(card.pageUrl)}
+              onClick={() => handleMateriClick(card.videoUrl)}
             >
               <img src={card.image} alt={card.title} className="w-full h-48 object-cover rounded-t-lg" />
               <div className="p-4">
@@ -94,7 +84,6 @@ const MateriPage = () => {
           ))}
         </div>
 
-        {/* Pagination */}
         <div className="flex justify-center space-x-2 mt-4 mb-8" style={{ marginBottom: '150px', marginTop:'80px' }}>
           <button
             className="px-3 py-1 text-black hover:bg-[#609AC1] font-[Raleway]"
@@ -129,4 +118,4 @@ const MateriPage = () => {
   );
 };
 
-export default MateriPage;
+export default MateriPage2;
